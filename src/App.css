@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.container {
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.section1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+.section2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo1 {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 130px;
+  font-weight: 1000;
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    #5335cf 0%,
+    #de005e 25%,
+    #f66e48 50%,
+    #de005e 75%,
+    #5335cf 100%
+  );
+  background-size: 400%;
+
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position: 400%;
+  }
+}
+
+#logo2 {
+  font-size: 170px;
+  font-weight: 800;
+}
+
+.sharebtn,
+.leaveBtn,
+.copyBtn {
+  border-radius: 5px;
+  font-weight: bold;
+  background: #ec3360;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  outline: none;
+  font-size: 16px;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+  padding: 0 25px;
+}
+
+.idebtn {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  font-size: 20px;
+  background-color: #101118;
+  align-items: center;
+  border: 1px solid black;
+  height: 8vh;
+  padding-left: 1vw;
+  color: aliceblue;
+}
+
+.nav_logo {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 20px;
+  font-weight: 1000;
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    #5335cf 0%,
+    #de005e 25%,
+    #f66e48 50%,
+    #de005e 75%,
+    #5335cf 100%
+  );
+  background-size: 400%;
+
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+.join_logo {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 25px;
+  font-weight: 1000;
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    #5335cf 0%,
+    #de005e 25%,
+    #f66e48 50%,
+    #de005e 75%,
+    #5335cf 100%
+  );
+  background-size: 400%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.upper {
+  height: 8vh;
+  width: 100%;
+}
+
+.lower {
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.aside {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  flex-direction: column;
+  background-color: #1c1e29;
+  color: white;
+  width: 14vw;
+}
+.asideInner {
+  flex: 1;
+}
+.status {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 5px;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor {
+  width: 86vw;
+  overflow: hidden;
+}
+
+.CodeMirror {
+  min-height: 92vh;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 3px;
+}
+
+.joinBtn {
+  background-color: #4aed88;
+  font-weight: bold;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+  cursor: pointer;
+  background: #2b824c;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  width: 150px;
+  background-color: #169246;
+  font-size: 14px;
+}
+
+.copyBtn {
+  width: 150px;
+  font-size: 14px;
+}
+.joinPageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #252525;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 330px;
+}
+
+img {
+  width: 50%;
+}
+
+input {
+  border: none;
+  height: 4vh;
+  border-radius: 7px;
+  padding: 2px;
+  padding-left: 8px;
+  outline: none;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h5 {
+  text-align: center;
+}
+
+.mainLabel {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.createNewBtn {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover {
+  color: #368654;
+}
