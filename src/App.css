@@ -14,17 +14,32 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: navy;
+  color: white;
+  /* background-color: #0b0f1a; */
+}
+.section1-left p {
+  margin-bottom: 10vh;
+  font-size: 18px;
+  line-height: 30px;
+  width: 700px;
+  text-align: justify;
+}
+
+.tagLine {
+  display: block;
+  color: white;
+  margin-bottom: 8vh;
+  font-size: 30px;
 }
 
 .section1-left {
-  width: 50vw;
+  height: 100vh;
+  width: 60vw;
+  padding: 30px;
 }
-
-.section1-left p{
-  margin-bottom: 35px;
+.section1-img {
+  width: 40vw;
 }
-
 .section2 {
   display: flex;
   flex-direction: row;
@@ -32,30 +47,37 @@
   justify-content: space-around;
   height: 60vh;
   width: 100vw;
-  color: #0A0D1C;
+  color: #0a0d1c;
   background-color: #ffd300;
 }
 
-.section1-img {
-  /* width: 100px ;
-  height: 100px ; */
-}
-
-.section2 p{
+.section2 p {
   width: 400px;
   margin-bottom: 35px;
 }
 
-
-.section3{
-  height: 50vh;
+.section3 {
+  height: 40vh;
   background-color: #10162f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+.card {
+  height: 100%;
+  flex: 0.25;
+  text-align: justify;
+}
+.card p {
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
-
-.logo1 {  
+.logo1 {
   font-size: 80px;
   font-weight: 1000;
+  margin-top: 15vh;
   outline: none;
   background: linear-gradient(
     135deg,
@@ -66,7 +88,6 @@
     #5335cf 100%
   );
   background-size: 400%;
-
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,16 +105,20 @@
   font-weight: 800;
 }
 
-.sharebtn{
-  margin-top: 20px;
-  width: 100px;
-  padding: 10px;
-  font-size: 15px;
-  text-align: center;
-  background-color: black;
+.sharebtn {
+  padding: 10px 15px;
+  background-color: #1323b5;
+  border-radius: 2px;
   color: white;
-  border-radius: 15px;
   text-decoration: none;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  line-height: 1;
+  transition-duration: 0.3s;
+}
+.sharebtn:hover {
+  background-color: #396dcd;
+  color: white;
   cursor: pointer;
 }
 
@@ -122,7 +147,7 @@
   text-align: center;
   background-color: black;
   color: white;
-  border-radius: 15px;
+  border-radius: 2px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -334,6 +359,6 @@ h5 {
   color: #368654;
 }
 
-.result{
+.result {
   height: 41vh;
 }

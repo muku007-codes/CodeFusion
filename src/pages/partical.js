@@ -1,6 +1,6 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
 const Particle = (props) => {
   const val = props.color;
@@ -30,11 +30,11 @@ const Particle = (props) => {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: 'push',
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: 'repulse',
             },
             resize: true,
           },
@@ -55,23 +55,23 @@ const Particle = (props) => {
         },
         particles: {
           color: {
-            value: "#e1d9d1",
+            value: '#e1d9d1',
           },
           links: {
-            color: "#e1d9d1",
+            color: '#e1d9d1',
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.1,
             width: 1,
           },
           collisions: {
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: 'none',
             enable: true,
             outModes: {
-              default: "bounce",
+              default: 'bounce',
             },
             random: false,
             speed: 1.5,
@@ -85,10 +85,10 @@ const Particle = (props) => {
             value: 80,
           },
           opacity: {
-            value: 0.7,
+            value: 0.2,
           },
           shape: {
-            type: "circle",
+            type: 'circle',
           },
           size: {
             value: { min: 1, max: 5 },
