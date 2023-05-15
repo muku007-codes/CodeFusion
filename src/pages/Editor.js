@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import Navbar from '../Navbar/Navbar';
-import CodeEditor from '../../components/codeEditor';
-import Client from '../../components/Client';
-import { initSocket } from '../../socket';
-import ACTIONS from '../../Actions';
+import Navbar from './Navbar';
+import CodeEditor from '../components/codeEditor';
+import Client from '../components/Client';
+import { initSocket } from '../socket';
+import ACTIONS from '../Actions';
 import {
   useLocation,
   useNavigate,

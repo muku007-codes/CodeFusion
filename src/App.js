@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main1/main";
-import Joinpage from "./pages/Joinpage/Joinpage";
-import Ide from "./pages/IdePage/ide";
-import Editor from "./pages/Editorpage/Editor";
+import Main from "./pages/main";
+import Joinpage from "./pages/Joinpage";
+import Ide from "./pages/ide";
+import Editor from "./pages/Editor";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 

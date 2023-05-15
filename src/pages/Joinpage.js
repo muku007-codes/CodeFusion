@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Particle from "../Particle/partical";
+import Particle from "./partical";
 import { v4 as uuidv4 } from "uuid";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";

@@ -55,10 +55,10 @@ const Particle = (props) => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#e1d9d1",
           },
           links: {
-            color: "#ffffff",
+            color: "#e1d9d1",
             distance: 150,
             enable: true,
             opacity: 0.2,
