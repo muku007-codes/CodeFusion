@@ -13,7 +13,7 @@ const Homeide = () => {
     <>
     <Container position='static'>
       <Toolbar> 
-        <div className='logo1' style={{fontSize: 30}}>CodeFusion</div>
+        <div className='homeidelogo' style={{fontSize: 30}}>CodeFusion</div>
       </Toolbar>
     </Container>
     <Code/>

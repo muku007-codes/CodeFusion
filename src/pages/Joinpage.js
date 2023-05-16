@@ -40,7 +40,7 @@ const Joinpage = () => {
 
   return (
     <>
-      <Particle color='#101010' />
+      {/* <Particle color='#101010' /> */} 
       <div className='joinPageWrapper'>
         <div className='formWrapper'>
           <span className='join_logo'>CodeFusion</span>
@@ -70,7 +70,6 @@ const Joinpage = () => {
             </button>
           </div>
           <h5 className='createInfo'>
-            {" "}
             If You Don't have an invite then create &nbsp;
             <a onClick={createNewRoom} href='/' className='createNewBtn'>
               New Room

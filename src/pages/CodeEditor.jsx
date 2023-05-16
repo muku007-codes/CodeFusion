@@ -69,8 +69,9 @@ const CodeEditor = ({ heading, icon, color, value, onChange }) => {
             onClick = {() => setOpen(prevState => !prevState)}
         />
       </Header>
+
       <ControlledEditor
-        className="controlled-editor"
+        idName="controlled-editor"
         value={value}
         onBeforeChange={handleChange}
         options={{

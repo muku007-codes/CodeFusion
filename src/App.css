@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,400;0,600;0,900;1,100&display=swap");
+/* font-family: 'Hanken Grotesk', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;900&display=swap");
+/* font-family: 'Inconsolata', monospace; */
+
 .container {
   overflow: scroll;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -14,28 +21,30 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
-  /* background-color: #0b0f1a; */
+  color: black;
+  background-color: #fff0e5;
 }
 .section1-left p {
   margin-bottom: 10vh;
   font-size: 18px;
+  font-weight: 300;
   line-height: 30px;
   width: 700px;
   text-align: justify;
 }
 
 .tagLine {
+  color: black;
   display: block;
-  color: white;
-  margin-bottom: 8vh;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 35px;
+  /* margin-bottom: 8vh; */
 }
 
 .section1-left {
   height: 100vh;
   width: 60vw;
-  padding: 30px;
+  padding-left: 100px;
 }
 .section1-img {
   width: 40vw;
@@ -48,7 +57,18 @@
   height: 60vh;
   width: 100vw;
   color: #0a0d1c;
-  background-color: #ffd300;
+  /* background-color: #ffd300; */
+  background: #fffc00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #fffc00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #fffc00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section2 p {
@@ -57,35 +77,78 @@
 }
 
 .section3 {
-  height: 40vh;
-  background-color: #10162f;
+  height: 45vh;
+  /* background-color: #10162f; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: whitesmoke;
+  color: #f0f0f0;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card {
-  height: 100%;
   flex: 0.25;
   text-align: justify;
 }
 .card p {
   margin-top: 25px;
   margin-bottom: 50px;
+  font-weight: 50;
+  color: gainsboro;
 }
 
+.card h1 {
+  font-weight: 100;
+}
+
+.card-btn {
+  background-color: #4aed88 !important;
+  color: #101118 !important;
+  /* border: 1px solid #; */
+  border-radius: 3px;
+}
 .logo1 {
-  font-size: 80px;
-  font-weight: 1000;
+  font-size: 120px;
+  font-weight: 900;
   margin-top: 15vh;
-  outline: none;
+  margin-bottom: 3vh;
+  /* outline: none; */
   background: linear-gradient(
     135deg,
-    #5335cf 0%,
-    #de005e 25%,
-    #f66e48 50%,
-    #de005e 75%,
-    #5335cf 100%
+    #03001e 0%,
+    #7303c0 20%,
+    #ec38bc 40%,
+    #fdeff9 60%,
+    #7303c0 80%,
+    #03001e 100%
+  );
+  background-size: 400%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+.homeidelogo{
+  font-size: larger;
+  font-weight: 900;
+  background: linear-gradient(
+    135deg,
+    #03001e 0%,
+    #7303c0 20%,
+    #ec38bc 40%,
+    #fdeff9 60%,
+    #7303c0 80%,
+    #03001e 100%
   );
   background-size: 400%;
   background-clip: inherit;
@@ -107,37 +170,60 @@
 
 .sharebtn {
   padding: 10px 15px;
-  background-color: #1323b5;
-  border-radius: 2px;
+  background-color: #3a10e5;
+  border-radius: 3px;
   color: white;
   text-decoration: none;
-  letter-spacing: 0.2px;
   font-size: 15px;
-  line-height: 1;
   transition-duration: 0.3s;
 }
 .sharebtn:hover {
+  border: 2px dotted black;
   background-color: #396dcd;
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
 }
 
 .leaveBtn,
 .copyBtn {
-  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  border-radius: 3px;
   font-weight: bold;
-  background: #ec3360;
-  border: none;
-  color: #ffffff;
+  background: #4aed88;
+  color: black;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   text-transform: capitalize;
-  outline: none;
-  font-size: 16px;
-  line-height: 50px;
+  /* outline: none; */
+  font-size: 15px;
+  /* line-height: 50px; */
   transition: all 0.3s ease-in-out;
-  padding: 0 25px;
+  padding: 10px 10px;
+}
+
+.copyBtn:hover {
+  border: 2px dotted black;
+  background-color: white;
+  color: whitesmoke;
+  cursor: pointer;
+  color: #0a0d1c;
+}
+
+.leaveBtn:hover {
+  border: 2px dotted black;
+  background-color: white;
+  color: whitesmoke;
+  cursor: pointer;
+  color: #0a0d1c;
+}
+
+.leaveBtn {
+  width: 150px;
+  margin-top: 10px;
+  background-color: red;
+  font-size: 15px;
+  /* font-weight: 600; */
 }
 
 .idebtn {
@@ -145,56 +231,62 @@
   padding: 10px;
   font-size: 15px;
   text-align: center;
-  background-color: black;
+  background-color: #1323b5;
   color: white;
-  border-radius: 2px;
+  /* border: 1px solid#10162f; */
+  border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
 }
 
+.idebtn:hover {
+  border: 2px dotted black;
+  background-color: #ffd300;
+  color: whitesmoke;
+  cursor: pointer;
+  color: #0a0d1c;
+}
+
 .navbar {
-  display: flex;
-  font-size: 20px;
-  background-color: #101118;
-  align-items: center;
-  border: 1px solid black;
   height: 8vh;
+  display: flex;
+  background-color: black;
+  align-items: center;
   padding-left: 1vw;
   color: aliceblue;
+  /* border-bottom: 5px solid black; */
 }
 
 .nav_logo {
-  font-family: 'Bruno Ace SC', cursive;
-  font-size: 20px;
-  font-weight: 1000;
-  outline: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
   background: linear-gradient(
     135deg,
-    #5335cf 0%,
-    #de005e 25%,
-    #f66e48 50%,
-    #de005e 75%,
-    #5335cf 100%
+    #FEAC5E 0%,
+    #C779D0 25%,
+    #4BC0C8 50%,
+    #C779D0 75%,
+    #FEAC5E 100%
   );
   background-size: 400%;
-
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 10s linear infinite;
+  color: white;
 }
+
 .join_logo {
-  font-family: 'Bruno Ace SC', cursive;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 1000;
   outline: none;
   background: linear-gradient(
     135deg,
-    #5335cf 0%,
-    #de005e 25%,
-    #f66e48 50%,
-    #de005e 75%,
-    #5335cf 100%
+    #ef32d9 0%,
+    #89fffd 25%,
+    #89fffd 75%,
+    #ef32d9 100%
   );
   background-size: 400%;
   background-clip: inherit;
@@ -204,6 +296,7 @@
 }
 
 .wrapper {
+  font-family: "Inconsolata", monospace;
   height: 100vh;
   width: 100vw;
 }
@@ -226,13 +319,15 @@
   padding-right: 16px;
   padding-bottom: 16px;
   flex-direction: column;
-  background-color: #1c1e29;
+  background-color: black;
   color: white;
   width: 14vw;
 }
+
 .asideInner {
   flex: 1;
 }
+
 .status {
   border-bottom: 1px solid #424242;
   padding-bottom: 5px;
@@ -249,16 +344,34 @@
   overflow: hidden;
 }
 
+/* .CodeMirror {
+  min-height: 92vh !important;
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+/* .CodeMirror{
+  min-height: 92vh !important;
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
 .CodeMirror {
-  min-height: 92vh;
+  min-height: 92vh !important;
   font-size: 16px;
   line-height: 1.6;
 }
+
+
+/* .sample {
+  height: 92vh !important;
+} */
+
 .clientsList {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .client {
@@ -270,10 +383,14 @@
 
 .userName {
   margin-top: 3px;
+  font-weight: 300;
 }
 
 .joinBtn {
-  background-color: #4aed88;
+  background: #ff9966;
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
   height: 30px;
   width: 80px;
@@ -282,17 +399,11 @@
   margin-left: auto;
 }
 
-.joinBtn:hover,
-.leaveBtn:hover {
+.joinBtn:hover {
   cursor: pointer;
-  background: #2b824c;
-}
-
-.leaveBtn {
-  margin-top: 20px;
-  width: 150px;
-  background-color: #169246;
-  font-size: 14px;
+  background: coral;
+  color: whitesmoke;
+  border: 2px dotted white;
 }
 
 .copyBtn {
@@ -300,36 +411,50 @@
   font-size: 14px;
 }
 .joinPageWrapper {
+  font-family: "Inconsolata", monospace;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   height: 100vh;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .formWrapper {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #252525;
+  background-color: #0a0d1c;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 350px;
   height: 330px;
 }
 
-/* img {
-  width: 50%;
-} */
-
 input {
+  font-family: "Inconsolata", monospace;
   border: none;
   height: 4vh;
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 2px;
   padding-left: 8px;
   outline: none;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .button-container {
@@ -349,16 +474,20 @@ h5 {
 }
 
 .createNewBtn {
-  color: #4aed88;
+  color: #ff9966;
   text-decoration: none;
-  border-bottom: 1px solid #4aed88;
+  border-bottom: 1px dotted white;
   transition: all 0.3s ease-in-out;
 }
 
 .createNewBtn:hover {
-  color: #368654;
+  color: whitesmoke;
 }
 
 .result {
   height: 41vh;
+}
+
+.createInfo {
+  font-size: 14px;
 }

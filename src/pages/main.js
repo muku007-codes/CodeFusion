@@ -6,7 +6,7 @@ import svg from '../home_svg.svg';
 const main = () => {
   return (
     <>
-      <Particle id='particle' color='#0b0f1a' />
+      {/* <Particle id='particle' color='#0b0f1a' /> */}
       <div className='container'>
         <div className='section1'>
           <div className='section1-left'>
@@ -22,7 +22,7 @@ const main = () => {
               world. Say goodbye to the hassle of manually sharing code snippets
               and files through email or messaging apps.
             </p>
-            <Link to='/join' className='sharebtn'>
+            <Link to='/join' className='sharebtn '>
               Share Code Now
             </Link>
           </div>
@@ -37,7 +37,7 @@ const main = () => {
               Open a Codeshare editor, write or copy code, then share it with
               friends and colleagues. Pair program and troubleshoot together.
             </p>
-            <Link to='/join' className='sharebtn'>
+            <Link to='/join' className='sharebtn card-btn' >
               Hack Together
             </Link>
           </div>
@@ -47,7 +47,7 @@ const main = () => {
               Set coding tasks and observe in real-time when interviewing
               remotely or in person. Nobody likes writing code on a whiteboard.
             </p>
-            <Link to='/join' className='sharebtn'>
+            <Link to='/join' className='sharebtn card-btn'>
               Start An Interview
             </Link>
           </div>
@@ -58,7 +58,7 @@ const main = () => {
               Universities and colleges around the world use Codeshare every
               day.
             </p>
-            <Link to='/join' className='sharebtn'>
+            <Link to='/join' className='sharebtn card-btn'>
               Teach Code
             </Link>
           </div>

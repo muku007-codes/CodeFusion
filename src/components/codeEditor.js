@@ -59,10 +59,12 @@ const CodeEditor = ({ socketRef, roomId, onCodeChange }) => {
   }, [socketRef.current]);
 
   return (
+    <div id='sample'>
     <textarea
       id='realTimeEditor'
-      defaultValue='Type you code here....'
+      defaultValue='Type your code here....'
     ></textarea>
+    </div>
   );
 };
 
