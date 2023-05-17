@@ -61,7 +61,7 @@ const Particle = (props) => {
             color: '#e1d9d1',
             distance: 150,
             enable: true,
-            opacity: 0.1,
+            opacity: 0.5,
             width: 1,
           },
           collisions: {
@@ -85,7 +85,7 @@ const Particle = (props) => {
             value: 80,
           },
           opacity: {
-            value: 0.2,
+            value: 0.5,
           },
           shape: {
             type: 'circle',

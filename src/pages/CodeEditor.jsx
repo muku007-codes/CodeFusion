@@ -1,15 +1,15 @@
-import styled from "@emotion/styled";
-import { Box } from "@mui/material";
-import CloseFullscreenIcon from "@mui/icons-material/CloseFullscreen";
-import { useState } from "react";
-import { Controlled as ControlledEditor } from "react-codemirror2";
-import "codemirror/theme/material.css";
-import "codemirror/lib/codemirror.css";
-import "codemirror/mode/xml/xml";
-import "codemirror/mode/javascript/javascript";
-import "codemirror/mode/css/css";
+import styled from '@emotion/styled';
+import { Box } from '@mui/material';
+import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
+import { useState } from 'react';
+import { Controlled as ControlledEditor } from 'react-codemirror2';
+import 'codemirror/theme/material.css';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/mode/xml/xml';
+import 'codemirror/mode/javascript/javascript';
+import 'codemirror/mode/css/css';
 
-import "./codeeditor.css";
+import './codeeditor.css';
 
 const Container = styled(Box)`
   flex-grow: 1;
@@ -34,51 +34,52 @@ const Header = styled(Box)`
 `;
 
 const CodeEditor = ({ heading, icon, color, value, onChange }) => {
-    
-    const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true);
 
-    const handleChange =  (editor, data, value) => {
-        onChange(value);
-    }
+  const handleChange = (editor, data, value) => {
+    onChange(value);
+  };
 
   return (
-    <Container style={open ? null : {flexGrow: 0}}>
+    <Container style={open ? null : { flexGrow: 0 }}>
       <Header>
         <Heading>
           <Box
-            component="span"
+            component='span'
             style={{
               background: color,
               height: 20,
               width: 20,
-              display: "flex",
-              placeContent: "center",
+              display: 'flex',
+              placeContent: 'center',
               borderRadius: 5,
               marginRight: 5,
               paddingBottom: 2,
-              color: "#000",
+              color: '#000',
             }}
           >
             {icon}
           </Box>
           {heading}
         </Heading>
-        <CloseFullscreenIcon 
-            fontSize="small"
-            style={{alignSelf: "center"}}
-            onClick = {() => setOpen(prevState => !prevState)}
+        <CloseFullscreenIcon
+          fontSize='small'
+          style={{ alignSelf: 'center' }}
+          onClick={() => setOpen((prevState) => !prevState)}
         />
       </Header>
-
-      <ControlledEditor
-        idName="controlled-editor"
-        value={value}
-        onBeforeChange={handleChange}
-        options={{
-          theme: "material",
-          lineNumbers: true,
-        }}
-      />
+      <div className='ide_editor'>
+        <ControlledEditor
+          id='ide-editor'
+          idName='controlled-editor'
+          value={value}
+          onBeforeChange={handleChange}
+          options={{
+            theme: 'material',
+            lineNumbers: true,
+          }}
+        />
+      </div>
     </Container>
   );
 };

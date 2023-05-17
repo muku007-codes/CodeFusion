@@ -1,25 +1,16 @@
-/* .controlled-editor .CodeMirror-scroll {
-    min-height: 44vh !important;
-    color: #fff;
-  } */
-  
-  /* .editor-container {
-    flex-grow: 1;
-    min-height: 44vh;
-  } */
+.ide_editor {
+  /* height: 44vh; */
+  overflow: scroll;
+}
 
-  .CodeMirror #controlled-editor { 
-    min-height: 44vh !important;
-    
-  }
-  .result{
-    position: fixed;
-    z-index: 1;
-  }
+.result {
+  position: fixed;
+  z-index: 1;
+}
 .CodeMirror-gutters {
-    background: #1d1e22 !important;
+  background: #1d1e22 !important;
 }
 
 .CodeMirror-scroll {
-    background: #1d1e22;
+  background: #1d1e22;
 }

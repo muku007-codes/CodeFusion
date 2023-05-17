@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
 
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,400;0,600;0,900;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,400;0,600;0,900;1,100&display=swap');
 /* font-family: 'Hanken Grotesk', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;900&display=swap');
 /* font-family: 'Inconsolata', monospace; */
 
 .container {
   overflow: scroll;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-around;
   color: black;
-  background-color: #fff0e5;
+  /* background-color: #fff0e5; */
 }
 .section1-left p {
   margin-bottom: 10vh;
@@ -138,7 +138,7 @@
   animation: animate 10s linear infinite;
 }
 
-.homeidelogo{
+.homeidelogo {
   font-size: larger;
   font-weight: 900;
   background: linear-gradient(
@@ -186,7 +186,7 @@
 
 .leaveBtn,
 .copyBtn {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   border-radius: 3px;
   font-weight: bold;
   background: #4aed88;
@@ -263,11 +263,11 @@
   font-weight: bolder;
   background: linear-gradient(
     135deg,
-    #FEAC5E 0%,
-    #C779D0 25%,
-    #4BC0C8 50%,
-    #C779D0 75%,
-    #FEAC5E 100%
+    #feac5e 0%,
+    #c779d0 25%,
+    #4bc0c8 50%,
+    #c779d0 75%,
+    #feac5e 100%
   );
   background-size: 400%;
   background-clip: inherit;
@@ -296,7 +296,7 @@
 }
 
 .wrapper {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   height: 100vh;
   width: 100vw;
 }
@@ -344,28 +344,11 @@
   overflow: hidden;
 }
 
-/* .CodeMirror {
-  min-height: 92vh !important;
-  font-size: 16px;
-  line-height: 1.6;
-} */
-
-/* .CodeMirror{
-  min-height: 92vh !important;
-  font-size: 16px;
-  line-height: 1.6;
-} */
-
 .CodeMirror {
-  min-height: 92vh !important;
-  font-size: 16px;
+  min-height: 92vh;
+  font-size: 14px;
   line-height: 1.6;
 }
-
-
-/* .sample {
-  height: 92vh !important;
-} */
 
 .clientsList {
   display: flex;
@@ -390,7 +373,7 @@
   background: #ff9966;
   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
   background: linear-gradient(to right, #ff5e62, #ff9966);
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: bold;
   height: 30px;
   width: 80px;
@@ -411,7 +394,7 @@
   font-size: 14px;
 }
 .joinPageWrapper {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,7 +429,7 @@
 }
 
 input {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   border: none;
   height: 4vh;
   border-radius: 3px;

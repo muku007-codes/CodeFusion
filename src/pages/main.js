@@ -6,7 +6,7 @@ import svg from '../home_svg.svg';
 const main = () => {
   return (
     <>
-      {/* <Particle id='particle' color='#0b0f1a' /> */}
+      <Particle id='particle' color='#fff0e5' />
       <div className='container'>
         <div className='section1'>
           <div className='section1-left'>
@@ -37,7 +37,7 @@ const main = () => {
               Open a Codeshare editor, write or copy code, then share it with
               friends and colleagues. Pair program and troubleshoot together.
             </p>
-            <Link to='/join' className='sharebtn card-btn' >
+            <Link to='/join' className='sharebtn card-btn'>
               Hack Together
             </Link>
           </div>

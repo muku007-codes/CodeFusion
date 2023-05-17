@@ -1,24 +1,23 @@
-import React, { useState } from "react";
-import Particle from "./partical";
-import { v4 as uuidv4 } from "uuid";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const Joinpage = () => {
   const navigate = useNavigate();
-  const [roomId, setRoomId] = useState(""); // set room id
-  const [username, setUsername] = useState(""); // set username
+  const [roomId, setRoomId] = useState(''); // set room id
+  const [username, setUsername] = useState(''); // set username
 
   const createNewRoom = (e) => {
     e.preventDefault(); // For remove reloading
     const id = uuidv4(); // Grenertating unique id's
     setRoomId(id);
-    toast.success("Room created"); // For popup toast
+    toast.success('Room created'); // For popup toast
   };
 
   const joinRoom = () => {
     if (!roomId || !username) {
-      toast.error("Username & ROOM ID is required");
+      toast.error('Username & ROOM ID is required');
       return;
     }
 
@@ -33,14 +32,14 @@ const Joinpage = () => {
 
   const handleInputEnter = (e) => {
     //  console.log('event',e.code);
-    if (e.code === "Enter") {
+    if (e.code === 'Enter') {
       joinRoom();
     }
   };
 
   return (
     <>
-      {/* <Particle color='#101010' /> */} 
+      {/* <Particle color='#101010' /> */}
       <div className='joinPageWrapper'>
         <div className='formWrapper'>
           <span className='join_logo'>CodeFusion</span>
